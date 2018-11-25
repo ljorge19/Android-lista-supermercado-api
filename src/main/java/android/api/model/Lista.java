@@ -9,17 +9,17 @@ public class Lista {
 	@Id
     public String id;
 	private String nome;
-	private List<Produto> ingredientes;
-	private String preparo;
+	private List<Produto> produtos;
+	private String comentario;
 	public Lista() {
 		super();
 	}
-	public Lista(String id, String nome, List<Produto> ingredientes, String preparo) {
+	public Lista(String id, String nome, List<Produto> produtos, String comentario) {
 		super();
 		this.id = id;
 		this.nome = nome;
-		this.ingredientes = ingredientes;
-		this.preparo = preparo;
+		this.produtos = produtos;
+		this.comentario = comentario;
 	}
 	public String getId() {
 		return id;
@@ -33,21 +33,21 @@ public class Lista {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public List<Produto> getIngredientes() {
-		return ingredientes;
+	public List<Produto> getprodutos() {
+		return produtos;
 	}
-	public void setIngredientes(List<Produto> ingredientes) {
-		this.ingredientes = ingredientes;
+	public void setprodutos(List<Produto> produtos) {
+		this.produtos = produtos;
 	}
-	public String getPreparo() {
-		return preparo;
+	public String getcomentario() {
+		return comentario;
 	}
-	public void setPreparo(String preparo) {
-		this.preparo = preparo;
+	public void setcomentario(String comentario) {
+		this.comentario = comentario;
 	}
 	@Override
 	public String toString() {
-		return "Receita [id=" + id + ", nome=" + nome + ", ingredientes=" + ingredientes + ", preparo=" + preparo + "]";
+		return "Receita [id=" + id + ", nome=" + nome + ", produtos=" + produtos + ", comentario=" + comentario + "]";
 	}
 
 }
