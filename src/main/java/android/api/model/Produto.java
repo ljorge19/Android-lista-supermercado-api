@@ -1,14 +1,14 @@
 package android.api.model;
 
-public class Ingrediente {
+public class Produto {
 
 	private String nome;
 	private String qtde;
 	
-	public Ingrediente() {
+	public Produto() {
 		super();
 	}
-	public Ingrediente(String nome, String qtde) {
+	public Produto(String nome, String qtde) {
 		super();
 		this.nome = nome;
 		this.qtde = qtde;

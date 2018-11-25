@@ -4,17 +4,17 @@ import java.util.List;
 
 import org.springframework.data.annotation.Id;
 
-public class Receita {
+public class Lista {
 	
 	@Id
     public String id;
 	private String nome;
-	private List<Ingrediente> ingredientes;
+	private List<Produto> ingredientes;
 	private String preparo;
-	public Receita() {
+	public Lista() {
 		super();
 	}
-	public Receita(String id, String nome, List<Ingrediente> ingredientes, String preparo) {
+	public Lista(String id, String nome, List<Produto> ingredientes, String preparo) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -33,10 +33,10 @@ public class Receita {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public List<Ingrediente> getIngredientes() {
+	public List<Produto> getIngredientes() {
 		return ingredientes;
 	}
-	public void setIngredientes(List<Ingrediente> ingredientes) {
+	public void setIngredientes(List<Produto> ingredientes) {
 		this.ingredientes = ingredientes;
 	}
 	public String getPreparo() {
